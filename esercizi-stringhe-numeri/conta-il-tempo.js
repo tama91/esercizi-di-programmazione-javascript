@@ -12,4 +12,18 @@
 
   http://www.imparareaprogrammare.it
 */
-var time = 0
+var time = 12571;
+const secondsINminute = 60;
+const secondsINhour = 3600;
+
+var HH = time/secondsINhour;
+HH = HH.toFixed(0);
+
+var mm = (time%secondsINhour)/secondsINminute;
+mm = mm.toFixed(0);
+
+var ss = (time%secondsINminute);
+ss = ss.toFixed(0);
+
+
+console.log(`${HH} ore, ${mm} minuti e ${ss} secondi`)
