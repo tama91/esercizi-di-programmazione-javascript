@@ -11,3 +11,11 @@
 
   http://www.imparareaprogrammare.it
 */
+var currentY = 2020;
+var BornY = 1991;
+
+var Age = currentY - BornY;
+var century = 100 - Age;
+
+console.log(Age);
+console.log(century);

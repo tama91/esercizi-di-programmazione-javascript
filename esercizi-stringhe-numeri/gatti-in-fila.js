@@ -17,3 +17,19 @@
 
   http://www.imparareaprogrammare.it
 */
+
+function difference(a, b) {
+  return Math.abs(a % b);
+}
+
+var numeroGatti = 44;
+
+var gattiXfila = 6;
+
+var numeroFile = Math.ceil(numeroGatti / gattiXfila);
+
+var gattiMancanti = Math.abs((numeroGatti % gattiXfila) - gattiXfila);
+
+
+console.log(numeroFile);
+console.log(gattiMancanti);
