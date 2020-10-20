@@ -19,3 +19,24 @@
 
   http://www.imparareaprogrammare.it
 */
+
+var gamer1 = 25;
+var gamer2 = 91;
+var extration = Math.floor((Math.random() * (100-1) +1));
+var valore1 = Math.abs(extration - gamer1);
+var valore2 = Math.abs(extration - gamer2);
+
+console.log(`Numero estratto ${extration}`);
+console.log(`${extration} - ${gamer1} = ${valore1}`);
+console.log(`${extration} - ${gamer2} = ${valore2}`);
+
+
+if (gamer1 == extration) {
+console.log('il vincitore: giocatore 1');
+} else if (gamer2 == extration) {
+console.log('il vincitore: giocatore 2');
+} else if (valore1 > valore2) {
+  console.log('Nessuno dei due ha azzeccato il numero casuale, ma il giocatore 2 si è avvicinato di più!');
+} else {
+console.log('Nessuno dei due ha azzeccato il numero casuale, ma il giocatore 1 si è avvicinato di più!');
+}
